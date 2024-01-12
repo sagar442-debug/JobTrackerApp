@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Link, useRouteError } from "react-router-dom";
 
 function Error() {
+
+  const error = useRouteError();
+  console.log(error)
+
   return (
-    <h1>
-      Error Page
-    </h1>
-  )
+    <div>
+      <h1>Error Page</h1>
+      <Link to={"/"}>Back Home</Link>
+    </div>
+  );
 }
 
-export default Error
+export default Error;
