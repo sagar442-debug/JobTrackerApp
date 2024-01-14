@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../assets/wrappers/RegisterAndLoginPage";
-import { Logo } from "../components";
+import { FormRow, Logo } from "../components";
 
 function Register() {
   return (
@@ -9,12 +9,11 @@ function Register() {
       <form className="form">
         <Logo />
         <h4>Register</h4>
-        <div className="form-row">
-          <label htmlFor="name" className="form-label">
-            Name
-          </label>
-          <input type="text" id="name" name="name" className="form-input" defaultValue="john" required/>
-        </div>
+        <FormRow type={'text'} name={'name'} defaultValue={'john'}/>
+        <FormRow type={'text'} name={'lastName'} labelText={'last name'} defaultValue={'smith'}/>
+        <FormRow type={'text'} name={'location'} defaultValue={'earth'}/>
+        <FormRow type={'email'} name={'email'} defaultValue={'johnsmith@gmail.com'}/>
+        <FormRow type={'password'} name={'password'} defaultValue={'secret123'}/>
         <button type="submit" className="btn btn-block">
           Submit
         </button>
