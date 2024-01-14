@@ -1,10 +1,11 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 function DashboardLayout() {
   return (
-    <h1>
-      Dashboard Layout Page
-    </h1>
+    <div>
+      <Outlet/>
+    </div>
   )
 }
 
