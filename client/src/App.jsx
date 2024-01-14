@@ -47,10 +47,12 @@ const router = createBrowserRouter([
           {
             path : 'all-jobs',
             element: <AllJobs/>
-          },{
+          },
+          {
             path : 'profile',
             element: <Profile/>
-          },{
+          },
+          {
             path : 'admin',
             element: <Admin/>
           },
