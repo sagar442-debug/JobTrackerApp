@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import { NavLink } from "react-router-dom";
 import links from "../utils/Links";
 const SmallSideBar = () => {
-  const { showSidebar } = useDashboardContext();
+  const { showSidebar, toggleSidebar } = useDashboardContext();
 
   return (
     <Wrapper>
